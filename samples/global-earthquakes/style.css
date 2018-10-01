@@ -1,0 +1,28 @@
+body {
+  background: white;
+}
+
+svg {
+  width: 960px;
+  height: 500px;
+}
+
+svg:active {
+  cursor: move;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+circle {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+#first_layer path {
+  fill-opacity: 0.8;
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
