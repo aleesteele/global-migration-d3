@@ -1,0 +1,27 @@
+{
+  "name": "aleesteele-global-cities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "engines": {
+    "node": "9.3.0"
+  },
+  "author": "aleesteele",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "d3": "^4.13.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "http": "0.0.0",
+    "jquery": "^3.2.1",
+    "openweathermap-js": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
