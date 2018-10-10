@@ -25,10 +25,10 @@ const basemap = L.tileLayer('https://api.mapbox.com/styles/v1/ilabmedia/cj84s9be
 // Intitiate the map container parameters
 
 const map = L.map('map', {
-	center: [13.7237264,110.6814572],
-	zoom: 6,
+	center: [30,110.6814572],
+	zoom: 3,
 	maxZoom: 18,
-	scrollWheelZoom: false,
+	scrollWheelZoom: true,
 	minZoom: 1,
 	zoomControl: false,
 	layers: [basemap]
@@ -45,16 +45,22 @@ const map = L.map('map', {
 
 L.control.zoomslider().addTo(map);
 
+// const client = new carto.Client({
+// 	apiKey: '9vqvVwALvL_JX-y0YfiqfA',
+// 	username: 'aleesteele',
+// });
+
 const client = new carto.Client({
-	apiKey: 'VIKGbtgYDbaBvbByM9W8gg',
-	username: 'csis'
+  apiKey: "SbU34R5Sn5DtMNEyXSSg_A",
+  username: "csis"
 });
 
+console.log('testing client: ', client);
 // Add country datasets
 
 const countryDataFilter = new carto.filter.Category('country1', { in: getCountryData() });
 
-			const resources = new carto.source.SQL('SELECT * FROM table_2018_allcountries_oilandgas_production ORDER BY country1 DESC');
+			const resources = new carto.source.SQL('SELECT * FROM ');
 						resources.addFilter(countryDataFilter);
 
 			const resourceStyle = new carto.style.CartoCSS(`
