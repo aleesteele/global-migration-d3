@@ -10,10 +10,11 @@
 </head>
 <body>
 	<center><h1>International Aerospace Database</h1></center>
-  <main class="charts">
-
-	</main>
-	<script src="/js/bar-chart.js">
+  <!-- <main class="charts"> -->
+	<svg width="960" height="500"></svg>
+	<!-- </main> -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+	<script src="/js/bar-chart.js">
 </body>
 </html>
