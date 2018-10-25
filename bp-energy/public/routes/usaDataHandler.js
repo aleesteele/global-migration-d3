@@ -52,3 +52,33 @@ d3.csv("/public/data/usaData.csv").row(function(d) {
     }
 
 })
+
+// const svg = d3.select('svg')
+//
+// const width = +svg.attr('width')
+// const height = +svg.attr('height')
+//
+// const render = data => {
+//   const xScale = scaleLiner()
+//     .domain()
+//     .range()
+//
+//   const yScale = scaleBand()
+//     .domain()
+//     .range()
+//
+//   svg.selectAll('rect').data(data)
+//     .enter().append('rect')
+//       // .attr('y',)
+//       .attr('width', 100)
+//       .attr('height', 50)
+// }
+//
+// d3.csv("/public/data/primary-energy.csv").then(data => {
+//   console.log('data: ' + data);
+//   data.forEach(d => {
+//
+//   })
+//   render(data)
+// })
+//
