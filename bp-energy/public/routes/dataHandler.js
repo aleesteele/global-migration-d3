@@ -1,3 +1,4 @@
+
 var parseDate = d3.timeParse("%Y");
 
 d3.csv("/public/data/primary-energy.csv")

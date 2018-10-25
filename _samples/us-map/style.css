@@ -1,0 +1,25 @@
+body {
+  background: white;
+}
+
+svg {
+  width: 960px;
+  height: 500px;
+}
+
+svg:active {
+  cursor: move;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.states {
+  fill: #ccc;
+  stroke: #fff;
+}
+
+.symbol {
+  fill: steelblue;
+  fill-opacity: .8;
+  stroke: #fff;
+}
